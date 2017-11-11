@@ -6,4 +6,5 @@ Phase2, Linking: .o moduldes are linked together to
 create a single executable.
 This picture shows the general idea of copiling  
 process.  
-![alt text](https://github.com/banziFD/Document/blob/master/image/g%2B%2B_stage.png "Compiling")
+![alt text](https://github.com/banziFD/Document/blob/master/image/g%2B%2B_stage.png "Compiling"
+

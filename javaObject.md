@@ -39,17 +39,24 @@ Note: Constructors are specical kind of method, we are able to identify construc
     - A class normally provides a constructor without arguments(e.g. "public Circle()")
     - A class may be declared without constructors. ***In this situation, a non-argument constructor with an empty body is declared in this class by compile automatically.***    
 ---
-```java
-private double radius
-```
 2. Datafields    
 Datafields is representing the state of an object by different values. In this case, a typicle value of radius, say 5.0 for example, states that this is a circle with radius as 5.0.
+```java
+private double radius;
+```
 ---
+3. Methods    
+The behavior of an object is defined by a set of methods. Invoding a method on an object means that you ask that object to perform a taks. In this case, if we invoke "getArea()", we are aksing this circle to compute its area.
 ```java
 public double getArea() {
     return Math.PI * radius * radius;
 }
 ```
-3. Methods    
-The behavior of an object is defined by a set of methods. Invoding a method on an object means that you ask that object to perform a taks. In this case, if we invoke "getArea()", we are aksing this circle to compute its area. 
 ---
+## ***inheritance and polymorphism***
+Inheritance means deriving a new class from existing classes. If we have:
+```java
+class c1{...}
+class c2 extends c1{...}
+```
+We say c1 is superclass of c2 and c2 is subclass of c1.
