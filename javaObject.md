@@ -63,7 +63,7 @@ Inheritance means deriving a new class from existing classes. If we have:
 class c1{...}
 class c2 extends c1{...}
 ```
-We say c1 is superclass of c2 and c2 is subclass of c1. As the Venn Diagram listed showing, we can generally verify the relationship between superclass and subclass. 
+>Note: We say c1 is superclass of c2 and c2 is subclass of c1. As the Venn Diagram listed showing, we can generally verify the relationship between superclass and subclass.    
 From the mathmatical side, superset and subset provide a good anology of superclass and subclass. In this case, we can safely say, ***c2 is a subset of c1***. Or, ***every c2 is c1 but not every c1 is c2***.
 ---
 >Understanding the collection relationship is essential in writting these kind of code:
