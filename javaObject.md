@@ -1,6 +1,6 @@
 # **Brief Summary of Java Object Oriented Terminology**
 *Author: Su Pengyu 11/09/2017*    
-This is a summary including basic knowledge of java OOP for those beginner. Please pay more attention on "Note:" and bold contents.
+This is a summary including basic knowledge of java OOP for those beginner. Please pay more attention on "Note:" and "bold contents".
 ## ***class***
 An object represents an entity in the real world that can be distinctly identified. Anything can be viewed as an object. Objects of the same type are defined using a common class. For example, all vehicles, all house or all loans can be viewed as a class of objects.
 
@@ -286,3 +286,8 @@ abstract class A implements B{
 }
 ````
 ***legal*** ---inherited method don't have to implement in abstract class/interface. Of course, you can implement it.
+---
+### Write at last
+1. Don't just read! Best way to learn this stuff is try this in your eclipse, and carefully read those "warning" message and "error". TRY INTERFACE EXTENDS CLASS, TRY NOT IMPLEMENT ABSTRACT METHOD, TRY YOUR EVERY CRAZY IDEA!
+2. I hope this could help you. If there is any fault, please tell contact me via supengyumail@gmail.com.
+3. GOOD LUCK FOR EVERY CODER!
