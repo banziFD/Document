@@ -1,13 +1,13 @@
 # **Brief Summary of Java Object Oriented Terminology**
 *Author: Su Pengyu 11/09/2017*    
-This is a summary including basic knowledge of java OOP for those beginner. Please pay more attention on "Note:" and "bold contents".
+This is a summary including basic knowledge of java OOP for beginners. Please pay special attention to items flagged with "Note:" and "in bold".
 ## ***class***
 An object represents an entity in the real world that can be distinctly identified. Anything can be viewed as an object. Objects of the same type are defined using a common class. For example, all vehicles, all house or all loans can be viewed as a class of objects.
 
 --- 
-We are goona using an simple example to discuss main components in detail.
+We are going to use a simple example to discuss main components in detail.
 ```java
-    public class circle{
+    public class Circle {
         private double radius;
         public Circle() {}
         public Circle(double radius) {
@@ -20,12 +20,12 @@ We are goona using an simple example to discuss main components in detail.
 ```
 ---
 1. Constructor  
-As its literal meaning, construcor is invoked when program needs to "build" a instance of typical class. Syntactically say, everytime program needs to build an object from class, invoking a constructor of the class using the "new" operator. In other words, ***as long as "new" appeared
-in the code, there must be a constructor been invoked.***   
+As its literal meaning, constructor is invoked when program needs to "build" a instance of typical class. Every time the program needs to build an object from class, using the new operator, it automatically invokes the constructor of the class. In other words, ***as long as "new" appears
+in the code, a constructor is invoked.***   
 >Note: Constructors are specical kind of method, we are able to identify constructors from three features:
     - ***Constructors must have the same name as the class itself.***
-     - ***Constructor do not have a return type-- not even "void"!***
-     - ***Constructor are called suing the "new" operator when an object is created. Constructors play the role of initializing objects.***    
+     - ***Constructors do not have a return type-- not even "void"!***
+     - ***Constructors are called using the "new" operator when an object is created. Constructors play the role of initializing objects.***    
      Using these three rules, we can find there are two constructors in this example.
 >
      ```java
@@ -34,7 +34,7 @@ in the code, there must be a constructor been invoked.***
             this.radius = raduis;
         }
         /*Like regular methods, constructors can be overloaded(multiple constructors with the
-        same name ut different arguments). Eg. new Circle() invode the first constructor and new
+        same name but different arguments). Eg. new Circle() invode the first constructor and new
         Circle(8.0) call the second one.
     ```
 > Note:
@@ -42,14 +42,14 @@ in the code, there must be a constructor been invoked.***
     - A class may be declared without constructors. ***In this situation, a non-argument constructor with an empty body is declared in this class by compile automatically.***   
 >
 ---
-2. Datafields    
-Datafields is representing the state of an object by different values. In this case, a typicle value of radius, say 5.0 for example, states that this is a circle with radius as 5.0.
+2. Data members (or fields)    
+Data members represent the state of an object by different values. In this case, a typical value of radius, say 5.0 for example, states that this is a circle with radius as 5.0.
 ```java
 private double radius;
 ```
 ---
 3. Methods    
-The behavior of an object is defined by a set of methods. Invoding a method on an object means that you ask that object to perform a taks. In this case, if we invoke "getArea()", we are aksing this circle to compute its area.
+The behavior of an object is defined by a set of methods. Invoking a method on an object means that you ask that object to perform a task. In this case, if we invoke "getArea()", we are asking this circle to compute its area.
 ```java
 public double getArea() {
     return Math.PI * radius * radius;
@@ -91,7 +91,7 @@ superclass = supertype = parent class = base class
 subclass = subtype = child class = extended class = derived class
 >
 
-As what we have done before, we enlarge our example code to help our discuss.
+As what we have done before, we enlarge our example code to help our discussion.
 ```java
 class Shape {
     private double location_x, location_y;
@@ -290,4 +290,4 @@ abstract class A implements B{
 ### Write at last
 1. Don't just read! Best way to learn this stuff is try this in your eclipse, and carefully read those "warning" message and "error". TRY INTERFACE EXTENDS CLASS, TRY NOT IMPLEMENT ABSTRACT METHOD, TRY YOUR EVERY CRAZY IDEA!
 2. I hope this could help you. If there is any fault, please tell contact me via supengyumail@gmail.com.
-3. GOOD LUCK FOR EVERY CODER!
+3. GOOD LUCK TO ALL YOU CODERS!
