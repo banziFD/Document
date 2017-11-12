@@ -218,20 +218,23 @@ Interface is somehow a class like concepts that contains ***only constants and a
 ---
 ## ***class VS abstract class VS interface***
 1. class vs abstract class
+
 | | Variables | Constructors | Methods |
 | ------| ------ | ------ | ------|
 | class | No restriction | No restriction | Only non-abstract method |
 | absract class | No restriction | ***only be invoked inside subclass's constructor***.<br>Cannot be instantiated using "new" operator. | No restrictions|
 
 2. abstract class vs interface
+
 | | Variables | Constructors | Methods |
 | ------| ------ | ------ | ------|
 | interface | only ***public static final*** | No constructors | Only contains ***public abstract method***. <br>ps: You can ***omit abstract*** since it is default option. |
 | absract class | No restriction | ***only be invoked inside subclass's constructor***.<br>Cannot be instantiated using "new" operator. | No restrictions|
+
 >Note: 
 abstract class can  inherit--------- ***class, abstract class and interface.***
 interface only inherit --------------***interface***
-
+>
 ---
 ##  ***validity judgement***
 We will show example code firstand then provide its validity.
