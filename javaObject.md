@@ -62,10 +62,10 @@ Inheritance means deriving a new class from existing classes. If we have:
 class c1{...}
 class c2 extends c1{...}
 ```
+
 We say c1 is superclass of c2 and c2 is subclass of c1.
 As the Venn Diagram listed showing, we can generally verify the relationship between superclass and subclass. 
-From the mathmatical side, superset and subset provide a good anology of superclass and subclass. In this case, we can safely say, ***c2 is a subset of c1***.(***$$c2 \subseteq c1$$***)  
-Or, ***every c2 is c1 but not every c1 is c2***.
+From the mathmatical side, superset and subset provide a good anology of superclass and subclass. In this case, we can safely say, ***c2 is a subset of c1***. Or, ***every c2 is c1 but not every c1 is c2***.
 ---
 >Understanding the collection relationship is essential in writting these kind of code:
 ```java
@@ -207,10 +207,11 @@ class Circle extends Shape {
     }
 }
 ```
-    Please read these simple codes first!
-    In practical, we know every shape must have area, so we want a     Shape.getArea() method to compute. But the problem is we are not able to knowthe area of Shape until we know the specific type of Shape, e.g. Rec or Circle.
-    To overcome this problem, we indtroduce abstract class and abstract method in our program. 
-    As you can see, I decarled an abstract double getArea() method in abstract class Shape. By declaring getArea(), we convey a message that if some class want to be subclass of Shape, it must have area. But Shape doesn't know how to compute area, so Shape just declared it. Subclass will take in charge of implementing getArea(). ***There is a important side effect on introducing abstract method in. That is, we can never instantiate an abstract class by "new SomeAbstractClass".***
+
+Please read these simple codes first!
+In practical, we know every shape must have area, so we want a     Shape.getArea() method to compute. But the problem is we are not able to knowthe area of Shape until we know the specific type of Shape, e.g. Rec or Circle.
+To overcome this problem, we indtroduce abstract class and abstract method in our program. 
+As you can see, I decarled an abstract double getArea() method in abstract class Shape. By declaring getArea(), we convey a message that if some class want to be subclass of Shape, it must have area. But Shape doesn't know how to compute area, so Shape just declared it. Subclass will take in charge of implementing getArea(). ***There is a important side effect on introducing abstract method in. That is, we can never instantiate an abstract class by "new SomeAbstractClass".***
 >Note: ***Abstract method can only appear inside a abstract class. If a subclass of an abstract superclass does not implement all the abstract methods, the subclass must be declared abstract. In other words, in a nonabstract subclass extended from an abstract class, all the abstract methods must be implemented, even if they are not used in the subclass. Also note that abstract methods are non-static.***
 ---
 2. interface
