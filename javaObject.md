@@ -261,8 +261,8 @@ class A {
 abstract class B extends A{
     int b
     B(int a, int b) {
-        this.b = b;
         super(a);
+        this.b = b;
     }
 }
 ```
@@ -289,5 +289,5 @@ abstract class A implements B{
 ---
 ### Write at last
 1. Don't just read! Best way to learn this stuff is try this in your eclipse, and carefully read those "warning" message and "error". TRY INTERFACE EXTENDS CLASS, TRY NOT IMPLEMENT ABSTRACT METHOD, TRY YOUR EVERY CRAZY IDEA!
-2. I hope this could help you. If there is any fault, please tell contact me via supengyumail@gmail.com.
+2. I hope this could help you. If there is any fault, please contact me via supengyumail@gmail.com.
 3. GOOD LUCK TO ALL YOU CODERS!
